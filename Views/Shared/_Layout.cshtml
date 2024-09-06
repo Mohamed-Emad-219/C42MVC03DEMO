@@ -1,0 +1,48 @@
+﻿
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    
+        <meta name="viewport" content="width=device-width" />
+        @* <link rel ="stylesheet" href="~/wwwroot/lib/bootstrap/css/bootstrap.min.css" /> *@
+        <link rel="stylesheet" href="~/Lib/bootstrap/css/bootstrap.css" />
+    
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+    @* Start Header *@
+    <nav>
+        <center>
+            <br />
+            <br />
+            <a href="/Home/Index" class="btn btn-primary">Home</a>
+            <a href="/Home/AboutUs" class="btn btn-warning">About Us</a>
+            <a href="/Home/Privacy" class="btn btn-danger">Privacy</a>
+            <a href="/Home/ContactUs" class="btn btn-light">Contact Us</a>
+            <a href="/Account/Login" class="btn btn-dark">Login</a>
+            <a href="/Account/Register" class="btn btn-light">Register</a>
+            <a asp-controller="home" asp-action="index">hh</a>
+        </center>
+    </nav>
+    @* End Header *@
+
+    @* start body *@
+    <section>
+        <center>
+            <div class="mg-5">
+                <h1>welcome to our web</h1>
+                <p>lorem .....</p>
+                <p> copy &copy; @DateTime.Now.Year</p>
+            </div>
+        </center>
+    </section>
+    <h1>lllll</h1>
+    @* End body *@
+</body>
+</html>
